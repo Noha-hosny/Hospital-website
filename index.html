@@ -8,10 +8,22 @@
     <link rel="stylesheet" href="style.css">
     <title>my website</title>
 </head>
+
+<script>
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+        navigation.classList.toggle("active");
+    });
+</script>
+
+
 <body>
 
     <header>
         <a href="#" class="logo">AL Hayat</a>
+        <i class="fas fa-bars menu-btn"></i>
         <nav class="navigation">
             <a href="#services">Services</a>
             <a href="#clinics">clinics</a>
